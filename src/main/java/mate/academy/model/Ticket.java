@@ -21,6 +21,13 @@ public class Ticket {
     @ManyToOne(fetch = FetchType.LAZY)
     private User user;
 
+    public Ticket(MovieSession movieSession, User user) {
+    }
+
+    public Ticket() {
+
+    }
+
     public Long getId() {
         return id;
     }
