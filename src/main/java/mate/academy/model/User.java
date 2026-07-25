@@ -19,6 +19,8 @@ public class User {
     private byte[] salt;
 
     public User(String mail, String password123) {
+        this.email = mail;
+        this.password = password123;
     }
 
     public User() {
